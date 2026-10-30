@@ -8,7 +8,7 @@ type Props = {
 
 export default function LinkList({ links, initialCounts }: Props) {
   return (
-    <ul className="mt-10 flex w-full flex-col gap-5">
+    <ul className="mt-12 flex w-full flex-col gap-4">
       {links.map((link) => (
         <li key={link.id}>
           <LinkCard link={link} initialCount={initialCounts[link.id] ?? 0} />

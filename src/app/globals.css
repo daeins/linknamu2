@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* iOS에서 background-attachment: fixed가 동작하지 않아 고정 레이어로 그라데이션을 깝니다. */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background:
+    radial-gradient(60rem 40rem at 50% -10%, #fffdf8 0%, transparent 60%),
+    linear-gradient(170deg, #fff8ee 0%, #fdeedd 50%, #fbdcc4 100%);
+}
+
+.dark body::before {
+  background:
+    radial-gradient(60rem 40rem at 50% -10%, #3a2a20 0%, transparent 60%),
+    linear-gradient(170deg, #1c1714 0%, #221a15 50%, #2b1d15 100%);
+}

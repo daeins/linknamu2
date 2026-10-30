@@ -32,8 +32,12 @@ export default function RootLayout({
     <html lang="ko" suppressHydrationWarning>
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css"
+        />
       </head>
-      <body className="min-h-screen bg-gray-50 text-gray-900 antialiased transition-colors dark:bg-gray-950 dark:text-gray-100">
+      <body className="min-h-screen bg-[#fdeedd] font-sans text-stone-800 antialiased dark:bg-[#221a15] dark:text-stone-100">
         {children}
       </body>
     </html>
