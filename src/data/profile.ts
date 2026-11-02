@@ -17,7 +17,7 @@ export type Profile = {
 export const profile: Profile = {
   name: "나일등",
   bio: "엔지니어 | 요즘에는 AI 활용에 관심이 많아요",
-  image: "/ai.jpg",
+  image: "/KDI.jpg",
   links: [
     {
       id: "github",
